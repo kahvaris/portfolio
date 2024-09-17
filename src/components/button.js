@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   background-color: ${({ theme }) => theme.buttonBackground}; /* Uses buttonBackground from theme */
   color: ${({ theme }) => theme.buttonText}; /* Uses buttonText from theme */
   padding: 10px 20px;
+  margin: 0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
