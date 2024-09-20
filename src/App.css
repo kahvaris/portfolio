@@ -78,7 +78,3 @@ button {
   }
 }
 
-
-canvas {
-  image-rendering: pixelated; /* This makes the canvas render with a pixelated effect */
-}

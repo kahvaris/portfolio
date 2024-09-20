@@ -29,16 +29,16 @@ const App = () => {
     <ThemeProvider theme={theme}>
       {/* Optional Global styles */}
       <BackG>
-        {/*
+        
         <Screen>
         <button onClick={toggleTheme1} id='T1'></button>
         <button onClick={toggleTheme2} id='T2'></button>
         <button onClick={toggleTheme3} id='T3'></button>
           <div style={{ position: 'inherit', top: '50px', margin: '10px', width: 'inherit', height: '100%' }}>
-            {/*<Button>Click Me</Button>*//*}
-            This is a
+            {/*<Button>Click Me</Button>*/}
+            More to come...
           </div>
-        </Screen>*/}
+        </Screen>
       </BackG>
     </ThemeProvider>
   );
