@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-//Theme
 import { ThemeProvider } from 'styled-components';
 import { Theme1, Theme2, Theme3 } from '../themes';
 
@@ -13,7 +12,7 @@ import Portfolio from '../pages/Portfolio';
 
 const StyledScreen = styled.div`
   background-color: white;
-  color: ${({ theme }) => theme.screenTextColor}; /* Uses screenTextColor from theme */
+  color: black;
   height: 70%;
   width: 60%;
   overflow: scroll;
@@ -24,7 +23,7 @@ const StyledScreen = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  border: 10px solid ${({ theme }) => theme.screenBackground};
+  border: 5px solid ${({ theme }) => theme.main};
 
 `;
 
@@ -35,7 +34,7 @@ const ThemeNav = styled.div`
   height: 50px;
   background-color: white;
   z-index: 3;
-  border-bottom: 5px solid ${({ theme }) => theme.screenBackground};
+  border-bottom: 5px solid ${({ theme }) => theme.main};
 `;
 
 const PageNav = styled.div`
@@ -46,7 +45,22 @@ const PageNav = styled.div`
   width: 100%;
   background-color: white;
   z-index: 2;
-  border-bottom: 5px solid ${({ theme }) => theme.screenBackground};
+  border-bottom: 5px solid ${({ theme }) => theme.main};
+`;
+
+const NavLink = styled(Link)`
+  color: black;  // You can pull this from your theme if needed
+  font-family: 'Arial', sans-serif;         // Set your desired font
+  font-size: 20px;                          // Adjust font size
+  text-decoration: none;                    // Remove underline by default
+
+  &:hover {
+    color: ${({ theme }) => theme.second}; 
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.second};
+  }
 `;
 
 //  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -72,22 +86,21 @@ const Screen = ({ children }) => {
           <button onClick={toggleTheme3} id='T3'></button>
           </ThemeNav>
 
-          
-            <Router>
+          <Router>
               {/* Navigation Bar */}
               <PageNav>{children}
                   <div style={{ width: '100%', textAlign: 'center'}}>
-                    <Link to="/">Home</Link>
+                    <NavLink to="/">Home </NavLink>
                   </div>
                   <div style={{ width: '100%', textAlign: 'center'}}>
-                    <Link to="/education">Education</Link>
+                    <NavLink to="/education">Education</NavLink>
                   </div>
                   <div style={{ width: '100%', textAlign: 'center'}}>
-                    <Link to="/portfolio">Portfolio</Link>
+                    <NavLink to="/portfolio">Portfolio</NavLink>
                   </div>
               </PageNav>
 
-              <div style={{top: '0px', padding: '30px', width: 'auto', height: 'auto', backgroundColor: 'beige' }}>
+            <div style={{top: '0px', padding: '30px', width: 'auto', height: 'auto', backgroundColor: 'white' }}>
               {/* Define Routes */}
               <Routes>
                 <Route path="/" element={<Home />} />

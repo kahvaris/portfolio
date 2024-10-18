@@ -1,38 +1,17 @@
 export const Theme1 = {
-    primaryColor: '#6200ea',   // Purple
-    secondaryColor: '#03dac6', // Light Green
-    buttonBackground: '#6200ea', // Purple
-    buttonText: '#000000',
-    buttonHoverBackground: '#3700b3',
-    
-    screenBackground: '#a895b9', // Light Blue
-    screenTextColor: '#000000',  // Black
+    main: '#a895b9',  // purple
 
-    backgroundTheme: '#fecb00'
+    second: '#fecb00'    // yellow
   };
   
 export const Theme2 = {
-    primaryColor: '#bb86fc',    // Light Purple
-    secondaryColor: '#03dac6',  // Light Green
-    buttonBackground: '#bb86fc', // Light Purple
-    buttonText: '#000000',
-    buttonHoverBackground: '#3700b3',
+    main: '#c5561e',  // red
 
-    screenBackground: '#c5561e',  // Dark Blue-Grey
-    screenTextColor: '#000000',   // White
-
-    backgroundTheme: '#30af84'
+    second: '#30af84'    // green
   };
 
 export const Theme3 = {
-    primaryColor: '#000000',    // Light Purple
-    secondaryColor: '#000000',  // Light Green
-    buttonBackground: '#000000', // Light Purple
-    buttonText: '#000000',
-    buttonHoverBackground: '#000000',
+    main: '#eb8600',  // orange
 
-    screenBackground: '#eb8600',  // Dark Blue-Grey
-    screenTextColor: '#000000',   // White
-
-    backgroundTheme: '#7d92d5'
+    second: '#7d92d5'    // blue
   };
