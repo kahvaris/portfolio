@@ -44,26 +44,28 @@ button {
   margin: 10px;
   position: absolute;
   top: 0px;
-  border-radius: 50%;
+  border-radius: 0%;
   border: 0;
   background-color: Black;
   cursor: pointer;
-  
 }
 
 #T1 {
   left: 0; 
-  background: linear-gradient(-45deg, #fecb00 50%, #a895b9 50% 100%);
+  background: conic-gradient(#fecb00 90deg, #a895b9 90deg 180deg, #fecb00 180deg 270deg, #a895b9 270deg);
   background-blend-mode: multiply;
+  background-size: 100% 100%;
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
+  
 }
 
 #T2 {
   left: 40px;
-  background: linear-gradient(-45deg, #30af84 50%, #c5561e 50% 100%);
+  background: conic-gradient(#30af84 90deg, #c5561e 90deg 180deg, #30af84 180deg 270deg, #c5561e 270deg);
   background-blend-mode: multiply;
+  background-size: 100% 100%;
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
@@ -71,8 +73,9 @@ button {
 
 #T3 {
   left: 80px; 
-  background: linear-gradient(-45deg, #7d92d5 50%, #eb8600 50% 100%);
+  background: conic-gradient(#7d92d5 90deg, #eb8600 90deg 180deg, #7d92d5 180deg 270deg, #eb8600 270deg);
   background-blend-mode: multiply;
+  background-size: 100% 100%;
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }

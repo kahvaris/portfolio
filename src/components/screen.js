@@ -23,9 +23,11 @@ const StyledScreen = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  border: 5px solid ${({ theme }) => theme.main};
+  border: 4px solid ${({ theme }) => theme.main};
 
 `;
+
+//  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
 const ThemeNav = styled.div`
   position: sticky;
@@ -34,25 +36,24 @@ const ThemeNav = styled.div`
   height: 50px;
   background-color: white;
   z-index: 3;
-  border-bottom: 5px solid ${({ theme }) => theme.main};
+  border-bottom: 4px solid ${({ theme }) => theme.main};
 `;
 
 const PageNav = styled.div`
   padding: 15px 0 15px 0;
   display: flex;
   position: sticky;
-  top: 55px;
+  top: 54px;
   width: 100%;
   background-color: white;
   z-index: 2;
-  border-bottom: 5px solid ${({ theme }) => theme.main};
+  border-bottom: 4px solid ${({ theme }) => theme.main};
 `;
 
 const NavLink = styled(Link)`
-  color: black;  // You can pull this from your theme if needed
-  font-family: 'Arial', sans-serif;         // Set your desired font
-  font-size: 20px;                          // Adjust font size
-  text-decoration: none;                    // Remove underline by default
+  color: black;
+  font-size: 30px;  
+  text-decoration: none;     
 
   &:hover {
     color: ${({ theme }) => theme.second}; 
@@ -63,10 +64,9 @@ const NavLink = styled(Link)`
   }
 `;
 
-//  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
 const Screen = ({ children }) => {
-  const [theme, setTheme] = useState(Theme1); // Default theme 1
+  const [theme, setTheme] = useState(Theme3); // Default theme
 
   const toggleTheme1 = () => {
     setTheme(Theme1);

@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div>
       <h1>Education Page</h1>
-      <p>This is the education page!</p>
+      <h2>This is the education page!</h2>
       <p>      
       Sed hendrerit ultricies venenatis. Sed est purus, aliquet et tincidunt finibus, pulvinar vitae felis. Donec erat leo, dictum a suscipit vitae, condimentum ac quam. Nulla facilisi. Vestibulum egestas massa a elementum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium nulla sed velit efficitur tincidunt. Duis aliquam sollicitudin orci, eget hendrerit sem dictum at. Cras lobortis lacus in venenatis accumsan. Curabitur vitae risus ut velit consectetur mollis eu vel libero. Quisque at arcu tempor, semper massa id, facilisis nulla. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.
 
