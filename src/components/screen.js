@@ -33,7 +33,7 @@ const ThemeNav = styled.div`
   position: sticky;
   top: 0;
   width: auto;
-  height: 50px;
+  height: 42px;
   background-color: white;
   z-index: 3;
   border-bottom: 4px solid ${({ theme }) => theme.main};
@@ -43,7 +43,7 @@ const PageNav = styled.div`
   padding: 15px 0 15px 0;
   display: flex;
   position: sticky;
-  top: 54px;
+  top: 46px;
   width: 100%;
   background-color: white;
   z-index: 2;
@@ -100,7 +100,7 @@ const Screen = ({ children }) => {
                   </div>
               </PageNav>
 
-            <div style={{top: '0px', padding: '30px', width: 'auto', height: 'auto', backgroundColor: 'white' }}>
+            <div style={{top: '0px', padding: '40px', width: 'auto', height: 'auto', backgroundColor: 'white' }}>
               {/* Define Routes */}
               <Routes>
                 <Route path="/" element={<Home />} />

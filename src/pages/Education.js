@@ -3,20 +3,10 @@ import React from 'react';
 const Education = () => {
   return (
     <div>
-      <h1>Education Page</h1>
-      <h2>This is the education page!</h2>
+      <h1>Education</h1>
       <p>      
-      Sed hendrerit ultricies venenatis. Sed est purus, aliquet et tincidunt finibus, pulvinar vitae felis. Donec erat leo, dictum a suscipit vitae, condimentum ac quam. Nulla facilisi. Vestibulum egestas massa a elementum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium nulla sed velit efficitur tincidunt. Duis aliquam sollicitudin orci, eget hendrerit sem dictum at. Cras lobortis lacus in venenatis accumsan. Curabitur vitae risus ut velit consectetur mollis eu vel libero. Quisque at arcu tempor, semper massa id, facilisis nulla. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      I've studied information technology in the University of Jyväskylä. Bachelors I completed in 2022. I continued straight to master's. Master's degree I got done in fall 2024. During bachelor's studies I learned basics of many technologies and languages. The master's provided more in depth knowledge but also a lot of new. 
 
-      Cras nunc ex, laoreet et facilisis et, mattis eget orci. Nulla eu egestas sem. Nunc a enim tincidunt, finibus dolor ac, tempor libero. In finibus mi vitae magna cursus, id sodales elit varius. Phasellus tellus nulla, dictum at dui congue, viverra consectetur dui. Nulla congue sapien dui, at facilisis arcu dignissim in. Proin ut ornare ipsum.
-
-      Sed hendrerit ultricies venenatis. Sed est purus, aliquet et tincidunt finibus, pulvinar vitae felis. Donec erat leo, dictum a suscipit vitae, condimentum ac quam. Nulla facilisi. Vestibulum egestas massa a elementum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium nulla sed velit efficitur tincidunt. Duis aliquam sollicitudin orci, eget hendrerit sem dictum at. Cras lobortis lacus in venenatis accumsan. Curabitur vitae risus ut velit consectetur mollis eu vel libero. Quisque at arcu tempor, semper massa id, facilisis nulla. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-      Cras nunc ex, laoreet et facilisis et, mattis eget orci. Nulla eu egestas sem. Nunc a enim tincidunt, finibus dolor ac, tempor libero. In finibus mi vitae magna cursus, id sodales elit varius. Phasellus tellus nulla, dictum at dui congue, viverra consectetur dui. Nulla congue sapien dui, at facilisis arcu dignissim in. Proin ut ornare ipsum.
-
-      Sed hendrerit ultricies venenatis. Sed est purus, aliquet et tincidunt finibus, pulvinar vitae felis. Donec erat leo, dictum a suscipit vitae, condimentum ac quam. Nulla facilisi. Vestibulum egestas massa a elementum mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed pretium nulla sed velit efficitur tincidunt. Duis aliquam sollicitudin orci, eget hendrerit sem dictum at. Cras lobortis lacus in venenatis accumsan. Curabitur vitae risus ut velit consectetur mollis eu vel libero. Quisque at arcu tempor, semper massa id, facilisis nulla. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Cras nunc ex, laoreet et facilisis et, mattis eget orci. Nulla eu egestas sem. Nunc a enim tincidunt, finibus dolor ac, tempor libero. In finibus mi vitae magna cursus, id sodales elit varius. Phasellus tellus nulla, dictum at dui congue, viverra consectetur dui. Nulla congue sapien dui, at facilisis arcu dignissim in. Proin ut ornare ipsum.
       </p>
     </div>
   );

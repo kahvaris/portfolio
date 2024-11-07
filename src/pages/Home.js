@@ -18,12 +18,16 @@ const ProfileImage = styled.div`
 
 const Home = ({ children }) => {
   return (
-    <div style={{display: 'grid', gridTemplate: '"a . ." "b c d"'}}>
+    <div style={{display: 'grid', gridTemplate: '"a . . ." "b b c c" "b b d d" "b b e e"'}}>
       <h1 style={{ gridArea: 'a' }}>Home Page</h1>
       <ProfileImage style={{ gridArea: 'b' }}></ProfileImage>{children}
-      <p style={{ gridArea: 'c', margin: '10px' }}>      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor magna quis augue ultricies iaculis. Nulla facilisi. Pellentesque luctus lacinia diam eget rutrum. Vivamus iaculis placerat nibh ac iaculis. Mauris sit amet sapien eu massa pharetra molestie. </p>
-      <p style={{ gridArea: 'd', margin: '10px' }}> 
-      Phasellus pharetra ultricies velit. Sed luctus pharetra rhoncus. Mauris tempor laoreet nibh. Fusce eget ipsum tempus, lobortis odio eu, sagittis ante. Sed congue at sapien ac commodo. Aliquam at lorem vel risus semper ultricies. Integer purus velit, mattis ac aliquet eget, tincidunt eu ex. Duis fringilla consectetur mi, lobortis viverra diam vulputate ut. Nullam malesuada placerat mauris, non laoreet lectus egestas eget. Donec vel dignissim tellus.</p>
+      <p style={{ gridArea: 'c' }}> Welcome to my virtual CV! I'm Kerttu, a recent graduate from the University of Jyväskylä. This page may give some kind of idea of the things I'm into. Though even this cannot tell everything. I like design and I'm a very visual being. I have a lot of interests in the IT area which has made it hard to navigate and choose the paths to pursue and develop more skills in. Hopefully this page helps you figure out a bit about me anyway! </p>
+      <h2 style={{ gridArea: 'd'}}> Contact info:</h2>
+      <ul style={{ gridArea: 'e', listStyleType: 'none', paddingLeft: '0' }}>
+        <li>phone: 0401702979</li>
+        <li>email: kerttu.varis@icloud.com</li>
+        <li>based in: Jyväskylä</li>
+      </ul>
     </div>
   );
 };

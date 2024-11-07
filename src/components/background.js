@@ -17,66 +17,79 @@ const BG = styled.div`
 `;
 
 
-
   const ScrollingLandscape = () => {
-    const landscapeRef1 = useRef(null);
-    const landscapeRef2 = useRef(null);
-    const landscapeRef3 = useRef(null);
 
-  
-    const texture = useTexture('/BG.PNG');
+    const sRefs = [useRef(null), useRef(null), useRef(null)];
+    const mRefs = [useRef(null), useRef(null), useRef(null)];
+    const bRefs = [useRef(null), useRef(null), useRef(null)];
+
+    const sTexture = useTexture('/BG1.png');
+    const mTexture = useTexture('/BG2.png');
+    const bTexture = useTexture('/BG3.png');
 
     const planeWidth = 32;
     const planeHeight = 17.0625;
 
-    // Center the planes vertically
-    const verticalOffset = -planeHeight / 2;
   
-    // Loop to move both planes
+    // Loop to move planes
     useFrame(() => {
-      if (landscapeRef1.current && landscapeRef2.current && landscapeRef3.current) {
-        // Move both planes to the left
-        landscapeRef1.current.position.x -= 0.03;
-        landscapeRef2.current.position.x -= 0.03;
-        landscapeRef3.current.position.x -= 0.03;
+      // Sky
+      sRefs.forEach((ref, index) => {
+        if (ref.current) {
+          ref.current.position.x -= 0.01;
+          if (ref.current.position.x < -planeWidth) {
+            ref.current.position.x += planeWidth * 3;
+          }
+        }
+      });
 
-  
-        // If the first plane has moved completely out of view, reset its position
-        if (landscapeRef1.current.position.x < -planeWidth) {
-          landscapeRef1.current.position.x = landscapeRef2.current.position.x + planeWidth;
+      // Mountains
+      mRefs.forEach((ref, index) => {
+        if (ref.current) {
+          ref.current.position.x -= 0.02;
+          if (ref.current.position.x < -planeWidth) {
+            ref.current.position.x += planeWidth * 3;
+          }
         }
-  
-        // If the second plane has moved completely out of view, reset its position
-        if (landscapeRef2.current.position.x < -planeWidth) {
-          landscapeRef2.current.position.x = landscapeRef3.current.position.x + planeWidth;
-        }
+      });
 
-        // If the third plane has moved completely out of view, reset its position
-        if (landscapeRef3.current.position.x < -planeWidth) {
-          landscapeRef3.current.position.x = landscapeRef1.current.position.x + planeWidth;
+      // Buildings
+      bRefs.forEach((ref, index) => {
+        if (ref.current) {
+          ref.current.position.x -= 0.03;
+          if (ref.current.position.x < -planeWidth) {
+            ref.current.position.x += planeWidth * 3;
+          }
         }
-      }
+      });
+
     });
   
     return (
       <>
-        {/* First Plane */}
-        <mesh ref={landscapeRef1} position={[0, 0, 0]}>
-          <planeGeometry args={[planeWidth, planeHeight]} />
-          <meshBasicMaterial map={texture} transparent={true} toneMapped={false} />
-        </mesh>
-  
-        {/* Second Plane */}
-        <mesh ref={landscapeRef2} position={[planeWidth, 0, 0]}>
-          <planeGeometry args={[planeWidth, planeHeight]} />
-          <meshBasicMaterial map={texture} transparent={true} toneMapped={false} />
-        </mesh>
+        {/* Sky */}
+        {sRefs.map((ref, index) => (
+          <mesh ref={ref} key={`sky-${index}`} position={[index * planeWidth, 0, 0]}>
+            <planeGeometry args={[planeWidth, planeHeight]} />
+            <meshBasicMaterial map={sTexture} transparent={true} toneMapped={false} />
+          </mesh>
+        ))}
 
-        {/* Third Plane */}
-        <mesh ref={landscapeRef3} position={[planeWidth * 2, 0, 0]}>
-          <planeGeometry args={[planeWidth, planeHeight]} />
-          <meshBasicMaterial map={texture} transparent={true} toneMapped={false} />
-        </mesh>
+        {/* Mountains */}
+        {mRefs.map((ref, index) => (
+          <mesh ref={ref} key={`mountains-${index}`} position={[index * planeWidth, 0, 0]}>
+            <planeGeometry args={[planeWidth, planeHeight]} />
+            <meshBasicMaterial map={mTexture} transparent={true} toneMapped={false} />
+          </mesh>
+        ))}
+
+        {/* Buildings */}
+        {bRefs.map((ref, index) => (
+          <mesh ref={ref} key={`buildings-${index}`} position={[index * planeWidth, 0, 0]}>
+            <planeGeometry args={[planeWidth, planeHeight]} />
+            <meshBasicMaterial map={bTexture} transparent={true} toneMapped={false} />
+          </mesh>
+        ))}
       </>
     );
   };

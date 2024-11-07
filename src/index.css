@@ -16,7 +16,24 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 30px;
+  margin: 10px 0 10px 0;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 10px 0 10px 0;
+}
+
 p {
+  font-size: 23px;
+  line-height: 110%;
+  margin: 10px 0 10px 0;
+}
+
+li {
   font-size: 23px;
 }
 

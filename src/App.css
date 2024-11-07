@@ -39,8 +39,8 @@
 
 
 button {
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   margin: 10px;
   position: absolute;
   top: 0px;
@@ -52,7 +52,8 @@ button {
 
 #T1 {
   left: 0; 
-  background: conic-gradient(#fecb00 90deg, #a895b9 90deg 180deg, #fecb00 180deg 270deg, #a895b9 270deg);
+  background: conic-gradient(#7d92d5 90deg, #666666 90deg 180deg, #7d92d5 180deg 270deg, #666666 270deg);
+  /* conic-gradient(#fecb00 90deg, #a895b9 90deg 180deg, #fecb00 180deg 270deg, #a895b9 270deg); */
   background-blend-mode: multiply;
   background-size: 100% 100%;
   &:hover {
@@ -62,8 +63,9 @@ button {
 }
 
 #T2 {
-  left: 40px;
-  background: conic-gradient(#30af84 90deg, #c5561e 90deg 180deg, #30af84 180deg 270deg, #c5561e 270deg);
+  left: 32px;
+  background: conic-gradient(#7d92d5 90deg, #c5561e 90deg 180deg, #7d92d5 180deg 270deg, #c5561e 270deg);
+  /* conic-gradient(#30af84 90deg, #c5561e 90deg 180deg, #30af84 180deg 270deg, #c5561e 270deg); */
   background-blend-mode: multiply;
   background-size: 100% 100%;
   &:hover {
@@ -72,8 +74,9 @@ button {
 }
 
 #T3 {
-  left: 80px; 
+  left: 64px; 
   background: conic-gradient(#7d92d5 90deg, #eb8600 90deg 180deg, #7d92d5 180deg 270deg, #eb8600 270deg);
+  /* conic-gradient(#7d92d5 90deg, #eb8600 90deg 180deg, #7d92d5 180deg 270deg, #eb8600 270deg); */
   background-blend-mode: multiply;
   background-size: 100% 100%;
   &:hover {
