@@ -21,7 +21,7 @@ const Home = ({ children }) => {
     <div style={{display: 'grid', gridTemplate: '"a . . ." "b b c c" "b b d d" "b b e e"'}}>
       <h1 style={{ gridArea: 'a' }}>Home Page</h1>
       <ProfileImage style={{ gridArea: 'b' }}></ProfileImage>{children}
-      <p style={{ gridArea: 'c' }}> Welcome to my virtual CV! I'm Kerttu, a recent graduate from the University of Jyväskylä. This page may give some kind of idea of the things I'm into. Though even this cannot tell everything. I like design and I'm a very visual being. I have a lot of interests in the IT area which has made it hard to navigate and choose the paths to pursue and develop more skills in. Hopefully this page helps you figure out a bit about me anyway! </p>
+      <p style={{ gridArea: 'c' }}> Welcome to my virtual CV! I'm Kerttu, a recent graduate from the University of Jyväskylä. This page may give some kind of idea of the things I'm into. Though even this cannot tell everything. I have a lot of interests in the IT area which has made it hard to navigate and choose the paths to pursue and develop more skills in. Hopefully this page helps you figure out a bit about me anyway! </p>
       <h2 style={{ gridArea: 'd'}}> Contact info:</h2>
       <ul style={{ gridArea: 'e', listStyleType: 'none', paddingLeft: '0' }}>
         <li>phone: 0401702979</li>
