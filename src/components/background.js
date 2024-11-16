@@ -6,7 +6,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { PerspectiveCamera, useTexture } from '@react-three/drei';
 
 const BG = styled.div`
-  background-image: url("/BG.png");
   background-size: cover;
   position: relative;
   padding: 0;
@@ -23,9 +22,9 @@ const BG = styled.div`
     const mRefs = [useRef(null), useRef(null), useRef(null)];
     const bRefs = [useRef(null), useRef(null), useRef(null)];
 
-    const sTexture = useTexture('/BG1.png');
-    const mTexture = useTexture('/BG2.png');
-    const bTexture = useTexture('/BG3.png');
+    const sTexture = useTexture(`${process.env.PUBLIC_URL}/BG1.png`);
+    const mTexture = useTexture(`${process.env.PUBLIC_URL}/BG2.png`);
+    const bTexture = useTexture(`${process.env.PUBLIC_URL}/BG3.png`);
 
     const planeWidth = 32;
     const planeHeight = 17.0625;
