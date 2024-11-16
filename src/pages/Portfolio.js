@@ -20,9 +20,9 @@ const Portfolio = () => {
         <p>Project Haze</p>
       </a>
       <h3>CV page</h3>
-      <p>This CV page I made using React and Three.js, since I've been very interested in trying out those technologies.</p>
+      <p>This CV page was made using React and Three.js.</p>
       <h3>Github</h3>
-      <p>There are a couple other (school)projects in my <a href='https://github.com/kahvaris/'>Github</a>. </p>
+      <p>There are a couple other (school)projects in my <a href='https://github.com/kahvaris/'>Github</a>. I hope to expand it more in the future with small projects that help me learn more and revise.</p>
     </div>
   );
 };

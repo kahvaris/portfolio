@@ -6,7 +6,7 @@ const Education = () => {
       <h1>Education</h1>
       <h3>Master's 2022 - 2024</h3>
       <p>      
-      I've studied information technology in the University of Jyväskylä. Bachelors I completed in 2022. I continued straight to master's. Master's degree I got done in fall 2024. The master's provided more in depth knowledge but also a lot of new. 
+      Master's studies provided more in depth knowledge but also a lot of new. 
       </p>
       <ul>
         <li>Advanced game project (10 cr Game project in a team of 4 people)</li>
