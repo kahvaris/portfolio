@@ -22,9 +22,9 @@ const BG = styled.div`
     const mRefs = [useRef(null), useRef(null), useRef(null)];
     const bRefs = [useRef(null), useRef(null), useRef(null)];
 
-    const sTexture = useTexture(`${process.env.PUBLIC_URL}/BG1.png`);
-    const mTexture = useTexture(`${process.env.PUBLIC_URL}/BG2.png`);
-    const bTexture = useTexture(`${process.env.PUBLIC_URL}/BG3.png`);
+    const sTexture = useTexture(`${process.env.PUBLIC_URL}/BG1.PNG`);
+    const mTexture = useTexture(`${process.env.PUBLIC_URL}/BG2.PNG`);
+    const bTexture = useTexture(`${process.env.PUBLIC_URL}/BG3.PNG`);
 
     const planeWidth = 32;
     const planeHeight = 17.0625;

@@ -1,6 +1,5 @@
-import React, { Children } from 'react';
-import { ThemeProvider, styled } from 'styled-components';
-import { Theme1, Theme2, Theme3 } from '../themes';
+import React from 'react';
+import { styled } from 'styled-components';
 
 const ProfileImage = styled.div`
   background-image: ${({ theme }) => theme.profile};

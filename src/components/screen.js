@@ -86,7 +86,7 @@ const Screen = ({ children }) => {
           <button onClick={toggleTheme3} id='T3'></button>
           </ThemeNav>
 
-          <Router>
+          <Router basename="/portfolio">
               {/* Navigation Bar */}
               <PageNav>{children}
                   <div style={{ width: '100%', textAlign: 'center'}}>
@@ -96,7 +96,7 @@ const Screen = ({ children }) => {
                     <NavLink to="/education">Education</NavLink>
                   </div>
                   <div style={{ width: '100%', textAlign: 'center'}}>
-                    <NavLink to="/portfolio">Portfolio</NavLink>
+                    <NavLink to="/work">Portfolio</NavLink>
                   </div>
               </PageNav>
 
@@ -105,7 +105,7 @@ const Screen = ({ children }) => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/education" element={<Education />} />
-                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/work" element={<Portfolio />} />
               </Routes>
             </div>
           </Router>
